@@ -5,5 +5,5 @@ on:
 
 jobs:
   call-sub:
-    uses: ./.github/workflows/sub.yaml
+    uses: ./.github/workflows/sub.yaml@main
     secrets: inherit
