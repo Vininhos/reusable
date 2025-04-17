@@ -3,6 +3,10 @@ name: sub
 on:
   workflow_call:
 
+env:
+  SECRET: ${{ secrets.SECRETVALUE }}
+  VARIABLE: ${{ vars.VARIABLEVALUE }}
+
 jobs:
   show-secret-variables:
     name: show-secret-variables
