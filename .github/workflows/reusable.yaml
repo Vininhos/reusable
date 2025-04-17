@@ -3,10 +3,6 @@ name: "reusable"
 on:
   workflow_call:
 
-env:
-  SECRET: ${{ secrets.SECRETVALUE }}
-  VARIABLE: ${{ vars.VARIABLEVALUE }}
-
 jobs:
   call-sub:
     uses: ./.github/workflows/sub.yaml
