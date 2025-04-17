@@ -1,0 +1,9 @@
+name: "reusable"
+
+on:
+  workflow_call:
+
+jobs:
+  call-sub:
+    uses: .github/workflows/sub.yaml
+    secrets: inherit
