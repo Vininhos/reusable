@@ -5,7 +5,7 @@ on:
 
 env:
   SECRET: ${{ secrets.SECRETVALUE }}
-  VARIABLE: ${{ variable.VARIABLEVALUE }}
+  VARIABLE: ${{ vars.VARIABLEVALUE }}
 
 jobs:
   show-secret-variables:
