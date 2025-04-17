@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run
-        run: "echo this is the value of the secret: ${SECRET} ----- and this is the variable value: ${variable}"
+        run: "echo this is the value of the secret: ${SECRET} ----- and this is the variable value: ${VARIABLE}"
