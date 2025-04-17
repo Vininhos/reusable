@@ -3,14 +3,10 @@ name: sub
 on:
   workflow_call:
 
-env:
-  SECRET: ${{ secrets.SECRETVALUE }}
-  VARIABLE: ${{ vars.VARIABLEVALUE }}
-
 jobs:
   show-secret-variables:
     name: show-secret-variables
     runs-on: ubuntu-latest
     steps:
       - name: run
-        run: "echo this is the value of the secret: ${SECRET} ----- and this is the variable value: ${VARIABLE}"
+        run: "echo this is the value of the secret: $SECRET ----- and this is the variable value: $VARIABLE"
